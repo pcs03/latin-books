@@ -1,0 +1,25 @@
+---
+title: Book Title
+subtitle: A Sample Book
+keywords: [sample, keywords]
+author:
+  - Foo Bar
+  - Foo Baz
+date: 1970-01-01
+lang: la
+fontsize: 10pt
+papersize: a5
+toc: true
+toc-title: Index
+classoptions: 
+  - twoside
+  - openright
+geometry:
+  - margin=1.5cm
+mainfont: TeX Gyre Pagella
+mainfontoptions:
+  - Numbers=Lowercase
+  - Numbers=Proportional 
+header-includes: []
+...
+
