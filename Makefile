@@ -10,13 +10,8 @@ METADATA = $(CONTENT_DIR)/metadata.yaml
 TEMPLATE = pandoc-templates/book.latex
 
 # Explicit order of files to ensure correct book structure
-CONTENT = \
-	$(CONTENT_DIR)/copyright.md \
-	$(CONTENT_DIR)/ack.md \
-	$(CONTENT_DIR)/preface.md \
-	$(CONTENT_DIR)/introduction.md \
-	$(CONTENT_DIR)/body.md \
-	$(CONTENT_DIR)/backmatter.md
+CONTENT_DIRS = $(sort $(wildcard $(CONTENT_DIR)/*/))
+CONTENT = $(foreach dir,$(CONTENT_DIRS),$(sort $(wildcard $(dir)*.md)))
 
 # Output File
 OUTPUT_PDF = $(OUTPUT_DIR)/book.pdf

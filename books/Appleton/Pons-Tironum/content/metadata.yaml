@@ -1,0 +1,29 @@
+---
+title: Pons Tironum
+# subtitle: The Legacy of Emperor Augustus
+keywords: [rome, latin, reader]
+author:
+  - R.B. Appleton
+  - W.H.S. Jones
+date: 1914
+lang: la
+fontsize: 10pt
+papersize: a5
+toc: true
+toc-title: Index
+classoptions: 
+  - twoside
+  - openright
+geometry:
+  - inner=3cm,
+  - outer=2.5cm,
+  - top=3cm,
+  - bottom=3cm,
+mainfont: TeX Gyre Pagella
+mainfontoptions:
+  - Numbers=Lowercase
+  - Numbers=Proportional 
+header-includes: |
+
+...
+
