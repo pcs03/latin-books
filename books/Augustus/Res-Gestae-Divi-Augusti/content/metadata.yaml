@@ -1,0 +1,29 @@
+---
+title: Res Gestae Dives Augusti
+subtitle: The Legacy of Emperor Augustus
+keywords: [rome, latin, augustus]
+author:
+  - Foo Bar
+  - Foo Baz
+date: 1924
+lang: la
+fontsize: 10pt
+papersize: a5
+toc: true
+toc-title: Index
+classoptions: 
+  - twoside
+  - openright
+geometry:
+  - inner=3cm,
+  - outer=2.5cm,
+  - top=3cm,
+  - bottom=3cm,
+mainfont: TeX Gyre Pagella
+mainfontoptions:
+  - Numbers=Lowercase
+  - Numbers=Proportional 
+header-includes: |
+  \newcommand{\emend}[1]{\textcolor{gray}{#1}}
+...
+

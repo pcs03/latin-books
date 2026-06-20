@@ -1,18 +1,22 @@
 # Default to the /content directory, but can be overridden
-BOOK_DIR ?= content
-OUTPUT_DIR ?= output
+
+BOOK_DIR ?= ./books/Augustus/Res-Gestae-Divi-Augusti
+
+CONTENT_DIR = $(BOOK_DIR)/content
+OUTPUT_DIR = $(BOOK_DIR)/output
 
 # Source Files
-METADATA = $(BOOK_DIR)/metadata.yaml
+METADATA = $(CONTENT_DIR)/metadata.yaml
 TEMPLATE = pandoc-templates/book.latex
 
 # Explicit order of files to ensure correct book structure
 CONTENT = \
-	$(BOOK_DIR)/copyright.md \
-	$(BOOK_DIR)/preface.md \
-	$(BOOK_DIR)/ack.md \
-	$(BOOK_DIR)/body.md \
-	$(BOOK_DIR)/backmatter.md
+	$(CONTENT_DIR)/copyright.md \
+	$(CONTENT_DIR)/ack.md \
+	$(CONTENT_DIR)/preface.md \
+	$(CONTENT_DIR)/introduction.md \
+	$(CONTENT_DIR)/body.md \
+	$(CONTENT_DIR)/backmatter.md
 
 # Output File
 OUTPUT_PDF = $(OUTPUT_DIR)/book.pdf
@@ -29,7 +33,7 @@ $(OUTPUT_PDF): $(CONTENT) $(METADATA) $(TEMPLATE)
 		--template=$(TEMPLATE) \
 		--metadata-file=$(METADATA) \
 		--top-level-division=chapter \
-		--resource-path=.:$(BOOK_DIR) \
+		--resource-path=.:$(CONTENT_DIR) \
 		-o $(OUTPUT_PDF) \
 		$(CONTENT)
 	@echo "Compilation successful!"
