@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<metadata>
+  <dc-metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:oebpackage="http://openebook.org/namespaces/oeb-package/1.0/">
+    <dc:Language>lat</dc:Language>
+    <dc:Title>A First Latin Reader</dc:Title>
+    <dc:Creator file-as="Unknown" role="aut">Herbertus Chester Nutting</dc:Creator>
+    <dc:Contributor role="bkp">Wikisource</dc:Contributor>
+    <dc:Date>1912-06-15T00:00:00+00:00</dc:Date>
+    <dc:Identifier id="uuid_id" scheme="uuid">810d6d14-8e70-4921-8e3d-962f910409df</dc:Identifier>
+  </dc-metadata>
+  <x-metadata>
+    <meta name="{http://calibre.kovidgoyal.net/2009/metadata}timestamp" content="2026-06-23T01:35:14.691245+00:00"/>
+    <meta name="ms-chaptertour" content="chaptertour"/>
+  </x-metadata>
+  <text-formatting>markdown</text-formatting>
+</metadata>

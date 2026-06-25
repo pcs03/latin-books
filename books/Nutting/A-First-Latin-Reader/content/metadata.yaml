@@ -1,0 +1,27 @@
+---
+title: A First Latin Reader
+keywords: [rome, latin, reader]
+author:
+  - H.C. Nutting
+date: 1912
+lang: la
+fontsize: 10pt
+papersize: a5
+toc: true
+toc-title: Index
+classoptions: 
+  - twoside
+  - openright
+geometry:
+  - inner=3cm,
+  - outer=2.5cm,
+  - top=3cm,
+  - bottom=3cm,
+mainfont: TeX Gyre Pagella
+mainfontoptions:
+  - Numbers=Lowercase
+  - Numbers=Proportional 
+header-includes: |
+
+...
+

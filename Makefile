@@ -28,6 +28,7 @@ $(OUTPUT_PDF): $(CONTENT) $(METADATA) $(TEMPLATE)
 		--template=$(TEMPLATE) \
 		--metadata-file=$(METADATA) \
 		--top-level-division=chapter \
+		--file-scope=true \
 		--resource-path=.:$(CONTENT_DIR) \
 		-o $(OUTPUT_PDF) \
 		$(CONTENT)
